@@ -39,11 +39,10 @@ header{
 #container{
     background-color: white;
     width: 70%;
-    height: 500px;
     margin: 40px auto;
-    border: 1px solid black;
     border-radius: 10px;
     padding-top: 15px;
+    padding-bottom: 30px;
 }
 
 /* bottoni */
@@ -87,14 +86,19 @@ header{
         margin: 10px 5px;
         padding: 0;
     }
+
+    ul.elenco li{
+        margin-bottom: 15px;
+    }
+
     .name-item{
         font-size: 22px;
     }
 
     .name-item::before{
-        content: "\25BC";
-        height: 5px;
-
+        content: "\25BE";
+        font-size: 24px;
+        margin-right: 5px;
     }
 
     ul.elenco li.vcheck::before{
@@ -109,10 +113,8 @@ header{
         text-align: center;
         line-height: 15px;
         vertical-align: middle;
+        margin-right: 10px;
     }
-
-
-   
 
     ul.elenco li.xcheck::before{
         display: inline-block;
@@ -126,6 +128,67 @@ header{
         text-align: center;
         line-height: 15px;
         vertical-align: middle;
+        margin-right: 10px;
     }
 
+    ul.elenco li.editorial::after{
+        content:"Editorial";
+        color: white;
+        background-color: rgb(34, 174, 238);
+        border-radius: 12px;
+        font-size: 12px;
+        padding: 7px;
+        margin-left: 5px;
+    }
+
+    ul.elenco li.goals::after{
+        content:"Q1 Goals";
+        color: white;
+        background-color: rgb(163, 113 ,224);
+        border-radius: 12px;
+        font-size: 12px;
+        padding: 7px;
+        margin-left: 5px;
+    }
+
+    ul.elenco li.recruting::after{
+        content:"Recruting";
+        color: white;
+        background-color: rgb(83, 195, 172);
+        border-radius: 12px;
+        font-size: 12px;
+        padding: 7px;
+        margin-left: 5px;
+    }
+
+
+    ul.elenco li.mobile::after{
+        content:"Mobile";
+        color: white;
+        background-color: rgb(251, 157, 77);
+        border-radius: 12px;
+        font-size: 12px;
+        padding: 7px;
+        margin-left: 5px;
+    }
+
+    ul.elenco li.website::after{
+        content:"Website";
+        color: white;
+        background-color: rgb(228, 93, 159);
+        border-radius: 12px;
+        font-size: 12px;
+        padding: 7px;
+        margin-left: 5px;
+    }
+
+    ul.elenco li.sales::after{
+        content:"Sales";
+        color: white;
+        background-color: rgb(171, 201, 64);
+        border-radius: 12px;
+        font-size: 12px;
+        padding: 7px;
+        margin-left: 5px;
+    }
 
