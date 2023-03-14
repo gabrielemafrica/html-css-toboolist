@@ -83,7 +83,7 @@ header{
 
     ul.elenco{
         list-style: none;
-        margin: 10px 5px;
+        margin: 10px 0;
         padding: 0;
     }
 
@@ -103,11 +103,9 @@ header{
         margin-right: 5px;
     }
 
-    ul.elenco li.vcheck::before{
+    ul.elenco li.check::before{
         display: inline-block;
-        content:"\2713";
-        color: rgb(0, 184, 155);
-        border: 1px solid rgb(0, 184, 155);
+        content:"";
         height: 15px;
         width: 15px;
         border-radius: 50%;
@@ -118,81 +116,56 @@ header{
         margin-right: 10px;
     }
 
-    ul.elenco li.xcheck::before{
-        display: inline-block;
+    ul.elenco li.check.yes::before{
+        content:"\2713";
+        color: rgb(0, 184, 155);
+        border: 1px solid rgb(0, 184, 155);
+    }
+
+    ul.elenco li.check.no::before{
         content:"\2715";
         color: red;
         border: 1px solid red;
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        font-size: 15px;
-        text-align: center;
-        line-height: 15px;
-        vertical-align: middle;
-        margin-right: 10px;
     }
 
     /* marker colorati */
 
-    ul.elenco li.editorial::after{
+    ul.elenco li.marker::after{
+        content:"";
+        color: white;
+        border-radius: 12px;
+        font-size: 12px;
+        padding: 7px;
+        margin-left: 5px;
+    }
+
+    ul.elenco li.marker.editorial::after{
         content:"Editorial";
-        color: white;
         background-color: rgb(34, 174, 238);
-        border-radius: 12px;
-        font-size: 12px;
-        padding: 7px;
-        margin-left: 5px;
     }
 
-    ul.elenco li.goals::after{
+    ul.elenco li.marker.goals::after{
         content:"Q1 Goals";
-        color: white;
         background-color: rgb(163, 113 ,224);
-        border-radius: 12px;
-        font-size: 12px;
-        padding: 7px;
-        margin-left: 5px;
     }
 
-    ul.elenco li.recruting::after{
+    ul.elenco li.marker.recruting::after{
         content:"Recruting";
-        color: white;
         background-color: rgb(83, 195, 172);
-        border-radius: 12px;
-        font-size: 12px;
-        padding: 7px;
-        margin-left: 5px;
     }
 
-
-    ul.elenco li.mobile::after{
+    ul.elenco li.marker.mobile::after{
         content:"Mobile";
-        color: white;
         background-color: rgb(251, 157, 77);
-        border-radius: 12px;
-        font-size: 12px;
-        padding: 7px;
-        margin-left: 5px;
     }
 
-    ul.elenco li.website::after{
+    ul.elenco li.marker.website::after{
         content:"Website";
-        color: white;
         background-color: rgb(228, 93, 159);
-        border-radius: 12px;
-        font-size: 12px;
-        padding: 7px;
-        margin-left: 5px;
     }
 
-    ul.elenco li.sales::after{
+    ul.elenco li.marker.sales::after{
         content:"Sales";
-        color: white;
         background-color: rgb(171, 201, 64);
-        border-radius: 12px;
-        font-size: 12px;
-        padding: 7px;
-        margin-left: 5px;
     }
 
