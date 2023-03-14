@@ -92,7 +92,9 @@ header{
     }
 
     .name-item::before{
-        content: "\2713";
+        content: "\25BC";
+        height: 5px;
+
     }
 
     ul.elenco li.vcheck::before{
@@ -104,6 +106,7 @@ header{
         width: 15px;
         border-radius: 50%;
         font-size: 15px;
+        text-align: center;
 
     }
 
@@ -116,6 +119,7 @@ header{
         width: 15px;
         border-radius: 50%;
         font-size: 15px;
+        text-align: center;
 
     }
 
