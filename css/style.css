@@ -107,8 +107,12 @@ header{
         border-radius: 50%;
         font-size: 15px;
         text-align: center;
-
+        line-height: 15px;
+        vertical-align: middle;
     }
+
+
+   
 
     ul.elenco li.xcheck::before{
         display: inline-block;
@@ -120,7 +124,8 @@ header{
         border-radius: 50%;
         font-size: 15px;
         text-align: center;
-
+        line-height: 15px;
+        vertical-align: middle;
     }
 
 
